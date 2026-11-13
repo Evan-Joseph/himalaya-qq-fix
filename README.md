@@ -1,6 +1,12 @@
 # himalaya-qq-fix
 
-针对 QQ 邮箱（`imap.qq.com`）及其它对 IMAP 序列号语法要求严格的邮件服务器定制修复的 Himalaya (CLI 邮件客户端) 核心库。
+<p align="left">
+  <img src="https://img.shields.io/badge/Rust-1.82%2B-000000?style=flat-square&logo=rust" alt="Rust 1.82+" />
+  <a href="https://github.com/pimalaya/core"><img src="https://img.shields.io/badge/Upstream-pimalaya%2Fcore-2f5390?style=flat-square" alt="Upstream" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
+</p>
+
+针对腾讯企业邮 / QQ 邮箱（`imap.qq.com`）等严格校验 IMAP 序列集升序语法的邮件服务器定制修复的 Himalaya（Rust CLI 邮件客户端）核心库分支。
 
 ## 修复内容 (Patches)
 
@@ -28,8 +34,8 @@ sudo cp target/release/himalaya /usr/local/bin/himalaya
 
 ## 配置说明 (Configuration)
 
-连接 QQ 邮箱或 Foxmail 时，需在邮箱设置中生成**授权码**作为密码，并在 `~/.config/himalaya/config.toml` 中配置对应的 IMAP/SMTP 端点。
+连接 QQ 邮箱等支持授权码机制的 IMAP 服务时，需在邮箱安全设置中生成客户端专用授权码作为登录密码，并在 `~/.config/himalaya/config.toml` 中配置对应的 IMAP/SMTP 端点。
 
----
+## 开源许可 (License)
 
-*Note: This repository is a patched fork of [pimalaya/core](https://github.com/pimalaya/core).*
+本仓库 Fork 自 [pimalaya/core](https://github.com/pimalaya/core)，延续上游 [MIT License](LICENSE) 开源协议。
